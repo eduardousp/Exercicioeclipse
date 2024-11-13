@@ -8,7 +8,7 @@ using manage.core.entities;
 using manage.core.interfaces;
 using System;
 
-namespace manage.aplication.Tests
+namespace manage.tests
 {
     public class UpdateCommentJobCommandHandlerTests
     {

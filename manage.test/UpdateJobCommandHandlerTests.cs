@@ -9,7 +9,7 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace manage.aplication.Tests
+namespace manage.tests
 {
     public class UpdateJobCommandHandlerTests
     {
