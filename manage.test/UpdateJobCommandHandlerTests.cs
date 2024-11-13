@@ -101,7 +101,7 @@ namespace manage.tests
 
             // Act & Assert
             var exception = await Assert.ThrowsAsync<Exception>(() => _handler.Handle(command, CancellationToken.None));
-            Assert.Equal($"Job com ID {jobId} não foi encontrado.", exception.Message,StringComparer.InvariantCulture);
+            Assert.Equal($"Job com ID {jobId} nao foi encontrado.", exception.Message,StringComparer.InvariantCulture);
 
             _jobRepositoryMock.Verify(repo => repo.GetByIdAsync(jobId), Times.Once);
             _jobRepositoryMock.Verify(repo => repo.UpdateAsync(It.IsAny<Job>()), Times.Never); // Não deve chamar o update

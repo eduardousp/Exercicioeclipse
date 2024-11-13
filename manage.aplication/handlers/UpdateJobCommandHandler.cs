@@ -29,7 +29,7 @@ public class UpdateJobCommandHandler : IRequestHandler<UpdateJobCommand, JobDTO>
             var job = await _jobRepository.GetByIdAsync(request.Id);
             if (job == null)
             {
-                throw new Exception($"Job com ID {request.Id} não foi encontrado.");
+                throw new Exception($"Job com ID {request.Id} nao foi encontrado.");
             }
 
             job.Title = !string.IsNullOrWhiteSpace(request.Title) ? request.Title : job.Title;

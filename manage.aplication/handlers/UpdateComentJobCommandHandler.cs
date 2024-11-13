@@ -30,7 +30,7 @@ public class UpdateCommentJobCommandHandler : IRequestHandler<AddJobCommentComma
            
             if (job == null)
             {
-                throw new Exception($"Job com ID {request.JobId} não foi encontrado.");
+                throw new Exception($"Job com ID {request.JobId} nao foi encontrado.");
             }
 
          
