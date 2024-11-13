@@ -51,7 +51,7 @@ public class UpdateCommentJobCommandHandler : IRequestHandler<AddJobCommentComma
         catch (Exception ex)
         {
 
-            throw;
+            return ex.ToString();
         }
       
     }

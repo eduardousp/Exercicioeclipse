@@ -51,7 +51,7 @@ public class UpdateJobCommandHandler : IRequestHandler<UpdateJobCommand, JobDTO>
 
             };
         }
-        catch (Exception ex)
+        catch (Exception )
         {
 
             throw;
