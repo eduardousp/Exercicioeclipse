@@ -48,10 +48,10 @@ public class UpdateCommentJobCommandHandler : IRequestHandler<AddJobCommentComma
             });
             return $"New comment added: {job.Comment}";
     }
-        catch (Exception ex)
+        catch (Exception )
         {
 
-            return ex.ToString();
+            throw;
         }
       
     }
