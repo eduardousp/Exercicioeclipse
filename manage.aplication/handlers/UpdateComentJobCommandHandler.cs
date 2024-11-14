@@ -19,7 +19,7 @@ public class UpdateCommentJobCommandHandler : IRequestHandler<AddJobCommentComma
 
     public async Task<string> Handle(AddJobCommentCommand request, CancellationToken cancellationToken)
     {
-        // Adicionar coment·rio ao histÛrico
+        // Adicionar coment√°rio ao hist√≥rico
        
         try
         {
@@ -30,7 +30,7 @@ public class UpdateCommentJobCommandHandler : IRequestHandler<AddJobCommentComma
            
             if (job == null)
             {
-                throw new Exception($"Job com ID {request.JobId} nao foi encontrado.");
+                throw new Exception($"Job com ID {request.JobId} n√£o foi encontrado.");
             }
 
          
